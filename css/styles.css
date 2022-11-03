@@ -1,34 +1,34 @@
 :root {
     --body-text-color: #212121;
-    --header-navigation-link-hover-color: #2196F3;
+    --header-navigation-link-hover-color: #2196f3;
     --site-logo-color: #000000;
     --header-contacts-color: #757575;
     --header-navigation-link-color: #212121;
-    --header-current-color: #2196F3;
-    --header-border-color: #ECECEC;
-    --hero-title-color: #FFFFFF;
-    --hero-button-background-color: #2196F3;
-    --hero-button-background-active-color: #188CE8;
-    --hero-button-text-color: #FFFFFF;
+    --header-current-color: #2196f3;
+    --header-border-color: #ececec;
+    --hero-title-color: #ffffff;
+    --hero-button-background-color: #2196f3;
+    --hero-button-background-active-color: #188ce8;
+    --hero-button-text-color: #ffffff;
     --skill-text-color: #757575;
-    --company-team-background-color: #F5F4FA;
-    --company-team-card-color: #FFFFFF;
+    --company-team-background-color: #f5f4fa;
+    --company-team-card-color: #ffffff;
     --company-works-title-color: #212121;
     --company-worker-name-color: #212121;
     --company-worker-position-color: #757575;
-    --projects-filter-button-background: #F5F4FA;
-    --projects-filter-button-hover-color: #FFFFFF;
-    --projects-filter-button-hover-background-color: #2196F3;
+    --projects-filter-button-background: #f5f4fa;
+    --projects-filter-button-hover-color: #ffffff;
+    --projects-filter-button-hover-background-color: #2196f3;
     --projects-filter-button-text-color: #212121;
     --projects-link-color: #212121;
     --project-title-color: #212121;
     --projects-type-color: #757575;
-    --projects-item-border-color: #EEEEEE;
-    --footer-logo-color: #FFFFFF;
-    --hero-footer-background-color: #2F303A;
-    --footer-physical-address-color: #FFFFFF;
+    --projects-item-border-color: #eeeeee;
+    --footer-logo-color: #ffffff;
+    --hero-footer-background-color: #2f303a;
+    --footer-physical-address-color: #ffffff;
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
-    --footer-contacts-hove-focus-color: #2196F3;
+    --footer-contacts-hove-focus-color: #2196f3;
 }
 
 html {
@@ -131,7 +131,6 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--header-navigation-link-color);
-
 }
 
 .header-navigation-email,
@@ -158,10 +157,23 @@ img {
 }
 
 .hero {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-color: var(--hero-footer-background-color);
+    background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero_image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--body-text-color);
 }
 
 .hero-title {
@@ -212,6 +224,15 @@ img {
     flex-basis: calc(100% / 4);
 }
 
+.skill-icon {
+    width: 70px;
+    height: 70px;
+    outline: 1px solid tomato;
+}
+
+.icon-antenna {
+}
+
 .skill-title {
     margin-bottom: 10px;
     font-style: normal;
@@ -257,13 +278,14 @@ img {
     display: flex;
 }
 
-.company-worker-list .team-card + .team-card{
+.company-worker-list .team-card + .team-card {
     margin-left: 30px;
 }
 
 .team-card {
     background-color: var(--company-team-card-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 }
@@ -274,7 +296,6 @@ img {
 }
 
 .company-worker-name {
-    
     margin-bottom: 10px;
     font-style: normal;
     font-size: 16px;
@@ -285,7 +306,6 @@ img {
 }
 
 .company-worker-position {
-    
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -299,10 +319,12 @@ img {
     width: 1px;
     height: 1px;
     margin: -1px;
-    padding: 0;
-    overflow: hidden;
     border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .projects-filter-buttons-list {
@@ -335,6 +357,8 @@ img {
 .projects-filter-button:focus {
     background: var(--projects-filter-button-hover-background-color);
     color: var(--projects-filter-button-hover-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-list {
@@ -348,6 +372,11 @@ img {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc(100% / 3 - 30px);
+}
+
+.projects-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-link {
