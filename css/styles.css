@@ -8,25 +8,25 @@
     --header-border-color: #ececec;
     --hero-button-background-color: #2196f3;
     --hero-button-background-active-color: #188ce8;
-    --skill-icon-backgruond: #F5F4FA;
+    --skill-icon-backgruond: #f5f4fa;
     --skill-text-color: #757575;
-    --company-team-background-color: #F5F4FA;
+    --company-team-background-color: #f5f4fa;
     --company-works-title-color: #212121;
     --company-worker-name-color: #212121;
     --company-worker-position-color: #757575;
-    --social-icons-fill: #AFB1B8;
-    --projects-filter-button-background: #F5F4FA;
+    --social-icons-fill: #afb1b8;
+    --projects-filter-button-background: #f5f4fa;
     --projects-filter-button-hover-background-color: #2196f3;
     --projects-filter-button-text-color: #212121;
     --projects-link-color: #212121;
     --project-title-color: #212121;
     --projects-type-color: #757575;
-    --projects-item-border-color: #EEEEEE;
+    --projects-item-border-color: #eeeeee;
     --hero-footer-background-color: #2f303a;
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
     --footer-contacts-hove-focus-color: #2196f3;
     --footer-social-link-bg-color: rgba(255, 255, 255, 0.1);
-    --global-white-color: #FFFFFF;
+    --global-white-color: #ffffff;
     --social-clients-links-hover-color: #2196f3;
 }
 
@@ -265,10 +265,6 @@ img {
     color: var(--skill-text-color);
 }
 
-.company-works-section {
-    padding-top: 0;
-}
-
 .company-works-list {
     display: flex;
 }
@@ -340,12 +336,6 @@ img {
     margin-left: 10px;
 }
 
-.social-link-icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-}
-
 .social-link {
     width: 44px;
     height: 44px;
@@ -354,6 +344,12 @@ img {
     justify-content: center;
     color: var(--social-icons-fill);
     background-color: var(--global-white-color);
+}
+
+.social-link-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 .social-link:hover,
@@ -372,12 +368,6 @@ img {
     margin-left: 30px;
 }
 
-.client-icon {
-    width: 106px;
-    height: 60px;
-    fill: currentColor;
-}
-
 .client-link {
     padding: 16px 32px;
     border: 1px solid var(--social-icons-fill);
@@ -389,6 +379,12 @@ img {
     justify-content: center;
     color: var(--social-icons-fill);
     background-color: var(--global-white-color);
+}
+
+.client-icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
 }
 
 .client-link:hover,
@@ -462,8 +458,9 @@ img {
 
 .projects-item:hover,
 .projects-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-link {
