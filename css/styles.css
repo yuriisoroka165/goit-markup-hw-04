@@ -248,7 +248,9 @@ img {
     margin-bottom: 30px;
     background-color: var(--skill-icon-backgruond);
     border-radius: 4px; 
-    ????????????????????????*/
+    ????????????????????????
+    тому що при зміні висоти  
+    потрібно і падінги змінювати*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -381,7 +383,6 @@ img {
 }
 
 .client-link {
-    padding: 16px 32px;
     border: 1px solid var(--social-icons-fill);
     border-radius: 4px;
     width: 170px;
